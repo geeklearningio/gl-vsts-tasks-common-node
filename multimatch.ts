@@ -15,7 +15,7 @@ export function applyMatch(directory: string, filters: string, files: string[]){
     });
 
     var allFiles = files.map(file => path.resolve(file));
-    var filteredFiles = allFiles.filter(micromatch.filter(patterns, { nodupes: true }));
+    var filteredFiles = micromatch(allFiles, patterns, { nodupes: true });
     
     return filteredFiles;
 }

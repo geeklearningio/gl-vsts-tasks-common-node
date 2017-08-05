@@ -1,4 +1,4 @@
-import micromatch = require('micromatch');
+var micromatch = require('micromatch');
 import path = require('path');
 import tl = require('vsts-task-lib/task');
 

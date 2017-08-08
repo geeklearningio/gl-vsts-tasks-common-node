@@ -248,3 +248,6 @@ ModelManifest.xml
 ps_modules
 
 .BuildOutput
+
+*.js
+*.d.ts

@@ -1,0 +1,30 @@
+{
+  "name": "gl-vsts-tasks-common-node",
+  "version": "0.1.0",
+  "description": "Common resources used across various Geek Learning vsts tasks.",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "build:test": "run-s build test",
+    "test": "jasmine JASMINE_CONFIG_PATH=./Tests/jasmine.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geeklearningio/gl-vsts-tasks-common-node.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/geeklearningio/gl-vsts-tasks-common-node/issues"
+  },
+  "homepage": "https://github.com/geeklearningio/gl-vsts-tasks-common-node#readme",
+  "dependencies": {
+    "micromatch": "^3.0.4",
+    "vsts-task-lib": "^2.0.6"
+  },
+  "devDependencies": {
+    "@types/node": "^8.0.19",
+    "@types/q": "^1.0.3",
+    "npm-run-all": "^4.0.2"
+  }
+}
